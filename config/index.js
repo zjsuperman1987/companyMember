@@ -22,7 +22,10 @@ module.exports = {
         devtool: '#source-map',
 
         // Paths
+        rootPath: path.resolve(__dirname, '../dist'),
         assetsRoot: path.resolve(__dirname, '../dist'),
+        assetsPublicPath: '/',
+        
 
         // Gzip off by default as many popular static hosts such as
         // Surge or Netlify already gzip all static assets for you.
