@@ -1,16 +1,8 @@
 'use strict'
 const path = require('path')
+const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf.js')
 const config = require('../config')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {
-	context: path.resolve(__dirname, '../'),
-	entry: {
-		main: './src/index/index.js',
-		test: './src/test/test.js'
-	},
-	output: {
-		path: config.build.assetsRoot,
-		filename: '[name]/[name].js',
-	}
-}
+module.exports = merge(baseWebpackConfig, {})
