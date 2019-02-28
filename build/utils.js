@@ -31,7 +31,7 @@ exports.generateMultiHtml = function () {
 	Object.keys(pages).forEach(n => {
 		var conf = {
 			template: pages[n],
-			filename: n + '/' + '[name].html',
+			filename: n + '/' + n + '.html',
 			chunks: ['manifest', 'vendor', n]
 		}
 		htmls.push(new HtmlWebpackPlugin(conf));
